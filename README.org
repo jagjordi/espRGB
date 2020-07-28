@@ -1,0 +1,2 @@
+* espRGB
+An ESP8266-based RGB LED controller using [[https://esphome.io][ESPhome.io]]
