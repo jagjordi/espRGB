@@ -1,4 +1,4 @@
-* BOM
+* BOM ideas
 - MOSFET driver: https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC3G17DCUR/296-18818-1-ND/863944
 - PSU: https://www.digikey.se/product-detail/en/mean-well-usa-inc/RS-15-24/1866-4130-ND/7706165
 - MOSFET: https://www.digikey.com/product-detail/en/nexperia-usa-inc/BUK98150-55A-CUF/1727-2224-1-ND/5361194
