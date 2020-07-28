@@ -1,3 +1,15 @@
 * BOM
 - MOSFET driver: https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC3G17DCUR/296-18818-1-ND/863944
 - PSU: https://www.digikey.se/product-detail/en/mean-well-usa-inc/RS-15-24/1866-4130-ND/7706165
+- MOSFET: https://www.digikey.com/product-detail/en/nexperia-usa-inc/BUK98150-55A-CUF/1727-2224-1-ND/5361194
+- ESP8266: d1 mini
+* BOM table
+| Name              | Quantity | Digikey PN     | Comment                                         |
+|-------------------+----------+----------------+-------------------------------------------------|
+| MOSFET            |        3 | 1727-2224-1-ND | ~100 mOhm Rdson                                 |
+| MOSFET driver     |        1 | 296-18818-1-ND | triple buffer                                   |
+| PSU               |        1 | 1866-4128-ND   | 12 V @ 15 W                                     |
+| Voltage regulator |        1 | 296-44518-1-ND | LM7805, 1.5 A                                   |
+| ESP8266           |        1 | 1528-1223-ND   | Any other ESP8266 with enough pins should work! |
+|                   |          |                |                                                 |
+
