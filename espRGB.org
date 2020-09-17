@@ -9,7 +9,7 @@
 | MOSFET            |        3 | 1727-2224-1-ND | ~100 mOhm Rdson                                 |
 | MOSFET driver     |        1 | 296-18818-1-ND | triple buffer                                   |
 | PSU               |        1 | 1866-4128-ND   | 12 V @ 15 W                                     |
-| Voltage regulator |        1 | 296-44518-1-ND | LM7805, 1.5 A                                   |
+| Voltage regulator |        1 | 296-44518-1-ND | LM7805, 1.5 A  (replace with wurt!!!            |
 | ESP8266           |        1 | 1528-1223-ND   | Any other ESP8266 with enough pins should work! |
 |                   |          |                |                                                 |
 
