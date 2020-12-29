@@ -1,0 +1,594 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "espRGB LED controller"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 5FD6C91F
+P 2550 3200
+F 0 "U1" H 2550 2311 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 2550 2220 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 2550 2050 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 700 2050 50  0001 C CNN
+	1    2550 3200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2150 2800
+NoConn ~ 2150 3100
+NoConn ~ 2150 3200
+$Comp
+L power:GND #PWR0103
+U 1 1 5FD6D67C
+P 2550 4100
+F 0 "#PWR0103" H 2550 3850 50  0001 C CNN
+F 1 "GND" H 2555 3927 50  0000 C CNN
+F 2 "" H 2550 4100 50  0001 C CNN
+F 3 "" H 2550 4100 50  0001 C CNN
+	1    2550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4100 2550 4000
+$Comp
+L power:+5V #PWR0104
+U 1 1 5FD6DD03
+P 2450 2300
+F 0 "#PWR0104" H 2450 2150 50  0001 C CNN
+F 1 "+5V" H 2465 2473 50  0000 C CNN
+F 2 "" H 2450 2300 50  0001 C CNN
+F 3 "" H 2450 2300 50  0001 C CNN
+	1    2450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2300 2450 2400
+Text Label 3650 3300 2    50   ~ 0
+blue1_gate
+Text Label 3650 3400 2    50   ~ 0
+red1_gate
+Text Label 3650 3500 2    50   ~ 0
+green1_gate
+$Comp
+L KTHFS:Wurth-FDSM VR1
+U 1 1 5FD6E9EA
+P 2550 5400
+F 0 "VR1" H 2550 5765 50  0000 C CNN
+F 1 "Wurth-FDSM" H 2550 5674 50  0000 C CNN
+F 2 "KTHFS:Wurth-FDSM" H 2250 5550 50  0001 C CNN
+F 3 "https://katalog.we-online.de/pm/datasheet/173010578.pdf" H 2550 5400 50  0001 C CNN
+	1    2550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0105
+U 1 1 5FD6EF37
+P 2050 5300
+F 0 "#PWR0105" H 2050 5150 50  0001 C CNN
+F 1 "+12V" H 2065 5473 50  0000 C CNN
+F 2 "" H 2050 5300 50  0001 C CNN
+F 3 "" H 2050 5300 50  0001 C CNN
+	1    2050 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5300 2050 5400
+Wire Wire Line
+	2050 5400 2200 5400
+$Comp
+L power:+5V #PWR0106
+U 1 1 5FD6F5FD
+P 3100 5300
+F 0 "#PWR0106" H 3100 5150 50  0001 C CNN
+F 1 "+5V" H 3115 5473 50  0000 C CNN
+F 2 "" H 3100 5300 50  0001 C CNN
+F 3 "" H 3100 5300 50  0001 C CNN
+	1    3100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5300 3100 5400
+Wire Wire Line
+	3100 5400 2900 5400
+$Comp
+L power:GND #PWR0107
+U 1 1 5FD6FEF0
+P 2550 5850
+F 0 "#PWR0107" H 2550 5600 50  0001 C CNN
+F 1 "GND" H 2555 5677 50  0000 C CNN
+F 2 "" H 2550 5850 50  0001 C CNN
+F 3 "" H 2550 5850 50  0001 C CNN
+	1    2550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5850 2550 5750
+Text Label 3650 2900 2    50   ~ 0
+blue2_gate
+Text Label 3650 3000 2    50   ~ 0
+red2_gate
+Text Label 3650 3100 2    50   ~ 0
+green2_gate
+Text Label 3650 3200 2    50   ~ 0
+button2
+Text Label 3650 3600 2    50   ~ 0
+button1
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5FEB79F3
+P 9150 1350
+F 0 "J1" H 9178 1326 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 9178 1235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9150 1350 50  0001 C CNN
+F 3 "~" H 9150 1350 50  0001 C CNN
+	1    9150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 5FEB7FE0
+P 8750 1100
+F 0 "#PWR0101" H 8750 950 50  0001 C CNN
+F 1 "+12V" H 8765 1273 50  0000 C CNN
+F 2 "" H 8750 1100 50  0001 C CNN
+F 3 "" H 8750 1100 50  0001 C CNN
+	1    8750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1100 8750 1250
+Wire Wire Line
+	8750 1250 8950 1250
+Wire Wire Line
+	8950 1350 8450 1350
+Wire Wire Line
+	8950 1450 8450 1450
+Wire Wire Line
+	8950 1550 8450 1550
+Text Label 8450 1550 0    50   ~ 0
+blue2
+Text Label 8450 1450 0    50   ~ 0
+red2
+Text Label 8450 1350 0    50   ~ 0
+green2
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5FEB9DCF
+P 9150 2450
+F 0 "J2" H 9178 2426 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 9178 2335 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9150 2450 50  0001 C CNN
+F 3 "~" H 9150 2450 50  0001 C CNN
+	1    9150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0102
+U 1 1 5FEB9DD5
+P 8750 2200
+F 0 "#PWR0102" H 8750 2050 50  0001 C CNN
+F 1 "+12V" H 8765 2373 50  0000 C CNN
+F 2 "" H 8750 2200 50  0001 C CNN
+F 3 "" H 8750 2200 50  0001 C CNN
+	1    8750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2200 8750 2350
+Wire Wire Line
+	8750 2350 8950 2350
+Wire Wire Line
+	8950 2450 8450 2450
+Wire Wire Line
+	8950 2550 8450 2550
+Wire Wire Line
+	8950 2650 8450 2650
+Text Label 8450 2650 0    50   ~ 0
+blue1
+Text Label 8450 2550 0    50   ~ 0
+red1
+Text Label 8450 2450 0    50   ~ 0
+green1
+$Comp
+L power:+12V #PWR0108
+U 1 1 5FEBA339
+P 8750 3150
+F 0 "#PWR0108" H 8750 3000 50  0001 C CNN
+F 1 "+12V" H 8765 3323 50  0000 C CNN
+F 2 "" H 8750 3150 50  0001 C CNN
+F 3 "" H 8750 3150 50  0001 C CNN
+	1    8750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5FEBAB6A
+P 9150 3250
+F 0 "J3" H 9178 3226 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 9178 3135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9150 3250 50  0001 C CNN
+F 3 "~" H 9150 3250 50  0001 C CNN
+	1    9150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3250 8750 3250
+Wire Wire Line
+	8750 3250 8750 3150
+$Comp
+L power:GND #PWR0109
+U 1 1 5FEBB7A5
+P 8750 3450
+F 0 "#PWR0109" H 8750 3200 50  0001 C CNN
+F 1 "GND" H 8755 3277 50  0000 C CNN
+F 2 "" H 8750 3450 50  0001 C CNN
+F 3 "" H 8750 3450 50  0001 C CNN
+	1    8750 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3450 8750 3350
+Wire Wire Line
+	8750 3350 8950 3350
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5FEC2BC1
+P 9150 4350
+F 0 "J4" H 9178 4326 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 9178 4235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 9150 4350 50  0001 C CNN
+F 3 "~" H 9150 4350 50  0001 C CNN
+	1    9150 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5FEC2BC9
+P 8750 4550
+F 0 "#PWR0110" H 8750 4300 50  0001 C CNN
+F 1 "GND" H 8755 4377 50  0000 C CNN
+F 2 "" H 8750 4550 50  0001 C CNN
+F 3 "" H 8750 4550 50  0001 C CNN
+	1    8750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4550 8750 4450
+Wire Wire Line
+	8750 4450 8950 4450
+Text Label 8250 4350 0    50   ~ 0
+button1
+Wire Wire Line
+	8250 4350 8750 4350
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5FEC3DAE
+P 2650 2300
+F 0 "#PWR0111" H 2650 2150 50  0001 C CNN
+F 1 "+3V3" H 2665 2473 50  0000 C CNN
+F 2 "" H 2650 2300 50  0001 C CNN
+F 3 "" H 2650 2300 50  0001 C CNN
+	1    2650 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2300 2650 2400
+$Comp
+L power:+3V3 #PWR0112
+U 1 1 5FEC4F29
+P 8750 3950
+F 0 "#PWR0112" H 8750 3800 50  0001 C CNN
+F 1 "+3V3" H 8765 4123 50  0000 C CNN
+F 2 "" H 8750 3950 50  0001 C CNN
+F 3 "" H 8750 3950 50  0001 C CNN
+	1    8750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FEC5BA7
+P 8750 4150
+F 0 "R1" H 8820 4196 50  0000 L CNN
+F 1 "R" H 8820 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8680 4150 50  0001 C CNN
+F 3 "~" H 8750 4150 50  0001 C CNN
+	1    8750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4300 8750 4350
+Connection ~ 8750 4350
+Wire Wire Line
+	8750 4350 8950 4350
+Wire Wire Line
+	8750 4000 8750 3950
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 5FECA415
+P 9150 5450
+F 0 "J5" H 9178 5426 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 9178 5335 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 9150 5450 50  0001 C CNN
+F 3 "~" H 9150 5450 50  0001 C CNN
+	1    9150 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5FECA41B
+P 8750 5650
+F 0 "#PWR0113" H 8750 5400 50  0001 C CNN
+F 1 "GND" H 8755 5477 50  0000 C CNN
+F 2 "" H 8750 5650 50  0001 C CNN
+F 3 "" H 8750 5650 50  0001 C CNN
+	1    8750 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5650 8750 5550
+Wire Wire Line
+	8750 5550 8950 5550
+Text Label 8250 5450 0    50   ~ 0
+button2
+Wire Wire Line
+	8250 5450 8750 5450
+$Comp
+L power:+3V3 #PWR0114
+U 1 1 5FECA425
+P 8750 5050
+F 0 "#PWR0114" H 8750 4900 50  0001 C CNN
+F 1 "+3V3" H 8765 5223 50  0000 C CNN
+F 2 "" H 8750 5050 50  0001 C CNN
+F 3 "" H 8750 5050 50  0001 C CNN
+	1    8750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FECA42B
+P 8750 5250
+F 0 "R2" H 8820 5296 50  0000 L CNN
+F 1 "R" H 8820 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8680 5250 50  0001 C CNN
+F 3 "~" H 8750 5250 50  0001 C CNN
+	1    8750 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5400 8750 5450
+Connection ~ 8750 5450
+Wire Wire Line
+	8750 5450 8950 5450
+Wire Wire Line
+	8750 5100 8750 5050
+Wire Wire Line
+	2950 2900 3650 2900
+Wire Wire Line
+	2950 3000 3650 3000
+Wire Wire Line
+	2950 3100 3650 3100
+Wire Wire Line
+	2950 3200 3650 3200
+Wire Wire Line
+	2950 3300 3650 3300
+Wire Wire Line
+	2950 3400 3650 3400
+Wire Wire Line
+	2950 3500 3650 3500
+Wire Wire Line
+	2950 3600 3650 3600
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5FED0EC4
+P 5600 1850
+F 0 "Q1" H 5804 1896 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5804 1805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5800 1950 50  0001 C CNN
+F 3 "~" H 5600 1850 50  0001 C CNN
+	1    5600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1850 4900 1850
+$Comp
+L power:GND #PWR0115
+U 1 1 5FED25EC
+P 5700 2150
+F 0 "#PWR0115" H 5700 1900 50  0001 C CNN
+F 1 "GND" H 5705 1977 50  0000 C CNN
+F 2 "" H 5700 2150 50  0001 C CNN
+F 3 "" H 5700 2150 50  0001 C CNN
+	1    5700 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2150 5700 2050
+Wire Wire Line
+	5700 1650 5700 1550
+Wire Wire Line
+	5700 1550 6150 1550
+$Comp
+L Device:Q_NMOS_GDS Q2
+U 1 1 5FED5487
+P 5600 2800
+F 0 "Q2" H 5804 2846 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5804 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5800 2900 50  0001 C CNN
+F 3 "~" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2800 4900 2800
+$Comp
+L power:GND #PWR0116
+U 1 1 5FED548E
+P 5700 3100
+F 0 "#PWR0116" H 5700 2850 50  0001 C CNN
+F 1 "GND" H 5705 2927 50  0000 C CNN
+F 2 "" H 5700 3100 50  0001 C CNN
+F 3 "" H 5700 3100 50  0001 C CNN
+	1    5700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3100 5700 3000
+Wire Wire Line
+	5700 2600 5700 2500
+Wire Wire Line
+	5700 2500 6150 2500
+$Comp
+L Device:Q_NMOS_GDS Q3
+U 1 1 5FED68A5
+P 5600 3700
+F 0 "Q3" H 5804 3746 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5804 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3700 4900 3700
+$Comp
+L power:GND #PWR0117
+U 1 1 5FED68AC
+P 5700 4000
+F 0 "#PWR0117" H 5700 3750 50  0001 C CNN
+F 1 "GND" H 5705 3827 50  0000 C CNN
+F 2 "" H 5700 4000 50  0001 C CNN
+F 3 "" H 5700 4000 50  0001 C CNN
+	1    5700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4000 5700 3900
+Wire Wire Line
+	5700 3500 5700 3400
+Wire Wire Line
+	5700 3400 6150 3400
+$Comp
+L Device:Q_NMOS_GDS Q4
+U 1 1 5FED856E
+P 5600 4600
+F 0 "Q4" H 5804 4646 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5804 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5800 4700 50  0001 C CNN
+F 3 "~" H 5600 4600 50  0001 C CNN
+	1    5600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4600 4900 4600
+$Comp
+L power:GND #PWR0118
+U 1 1 5FED8575
+P 5700 4900
+F 0 "#PWR0118" H 5700 4650 50  0001 C CNN
+F 1 "GND" H 5705 4727 50  0000 C CNN
+F 2 "" H 5700 4900 50  0001 C CNN
+F 3 "" H 5700 4900 50  0001 C CNN
+	1    5700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4900 5700 4800
+Wire Wire Line
+	5700 4400 5700 4300
+Wire Wire Line
+	5700 4300 6150 4300
+$Comp
+L Device:Q_NMOS_GDS Q5
+U 1 1 5FEDA38B
+P 5600 5500
+F 0 "Q5" H 5804 5546 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5804 5455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5800 5600 50  0001 C CNN
+F 3 "~" H 5600 5500 50  0001 C CNN
+	1    5600 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5500 4900 5500
+$Comp
+L power:GND #PWR0119
+U 1 1 5FEDA392
+P 5700 5800
+F 0 "#PWR0119" H 5700 5550 50  0001 C CNN
+F 1 "GND" H 5705 5627 50  0000 C CNN
+F 2 "" H 5700 5800 50  0001 C CNN
+F 3 "" H 5700 5800 50  0001 C CNN
+	1    5700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5800 5700 5700
+Wire Wire Line
+	5700 5300 5700 5200
+Wire Wire Line
+	5700 5200 6150 5200
+$Comp
+L Device:Q_NMOS_GDS Q6
+U 1 1 5FEDC2C3
+P 5600 6450
+F 0 "Q6" H 5804 6496 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5804 6405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5800 6550 50  0001 C CNN
+F 3 "~" H 5600 6450 50  0001 C CNN
+	1    5600 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6450 4900 6450
+$Comp
+L power:GND #PWR0120
+U 1 1 5FEDC2CA
+P 5700 6750
+F 0 "#PWR0120" H 5700 6500 50  0001 C CNN
+F 1 "GND" H 5705 6577 50  0000 C CNN
+F 2 "" H 5700 6750 50  0001 C CNN
+F 3 "" H 5700 6750 50  0001 C CNN
+	1    5700 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6750 5700 6650
+Wire Wire Line
+	5700 6250 5700 6150
+Wire Wire Line
+	5700 6150 6150 6150
+Text Label 6150 1550 2    50   ~ 0
+green2
+Text Label 6150 2500 2    50   ~ 0
+red2
+Text Label 6150 3400 2    50   ~ 0
+blue2
+Text Label 6150 4300 2    50   ~ 0
+green1
+Text Label 6150 5200 2    50   ~ 0
+red1
+Text Label 6150 6150 2    50   ~ 0
+blue1
+Text Label 4900 6450 0    50   ~ 0
+blue1_gate
+Text Label 4900 2800 0    50   ~ 0
+red2_gate
+Text Label 4900 1850 0    50   ~ 0
+green2_gate
+Text Label 4900 3700 0    50   ~ 0
+blue2_gate
+Text Label 4900 5500 0    50   ~ 0
+red1_gate
+Text Label 4900 4600 0    50   ~ 0
+green1_gate
+$EndSCHEMATC

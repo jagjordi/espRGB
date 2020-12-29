@@ -1,4 +1,4 @@
-19106317677548424
+19143314524574143
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -55139,6 +55139,34 @@ Grid-EYE
 14
 14
 KTHFS
+HEN.0F.303
+LEMO CONNECTOR
+LEMO CONNECTOR
+0
+7
+7
+KTHFS
+HEN.1F.308
+LEMO CONNECTOR
+LEMO CONNECTOR
+0
+12
+12
+KTHFS
+HEN.2F.312
+LEMO CONNECTOR
+LEMO CONNECTOR
+0
+16
+16
+KTHFS
+HEN.2F.319
+LEMO CONNECTOR
+LEMO CONNECTOR
+0
+23
+23
+KTHFS
 HEW.4F.340.XLNP
 
 
@@ -55188,12 +55216,33 @@ MSS6200G04
 22
 19
 KTHFS
+NCAB
+
+
+0
+0
+0
+KTHFS
+Potentiometer_Bourns_TC33X_Vertical
+Potentiometer, Bourns, TC33X, Vertical, https://www.bourns.com/pdfs/TC33.pdf
+Potentiometer Bourns TC33X Vertical
+0
+3
+3
+KTHFS
 PowerPAK_SO-8
 
 
 0
 9
 3
+KTHFS
+QSH-030-01-F-D-A-K-TR
+
+
+0
+64
+64
 KTHFS
 T9AS1D12-24
 
@@ -55251,6 +55300,13 @@ Wurth-FDSM
 3
 3
 KTHFS
+Wurth-FISM
+
+
+0
+4
+4
+KTHFS
 Wurth-LAN_transformer
 
 
@@ -55293,6 +55349,20 @@ Wurth-MM_female_10
 10
 10
 KTHFS
+Wurth-MM_female_12
+
+
+0
+12
+12
+KTHFS
+Wurth-MM_female_14
+
+
+0
+14
+14
+KTHFS
 Wurth-MM_male_4
 
 
@@ -55328,12 +55398,54 @@ Wurth-MPC3_vert_6
 6
 6
 KTHFS
-Wurth-MPC4_angle_2
+Wurth-MPC4_4.2_male_vert_2x2
+
+
+0
+4
+4
+KTHFS
+Wurth-MPC4_male_angle_2
 
 
 0
 2
 2
+KTHFS
+Wurth-MPC4_male_angle_2x2
+WR-MPC4-4.20mm Male Dual Row Angled Header,4 pins
+
+0
+4
+4
+KTHFS
+Wurth-MPC4_male_angle_3
+
+
+0
+3
+3
+KTHFS
+Wurth-MPC4_male_angle_4
+
+
+0
+4
+4
+KTHFS
+Wurth-MPC4_male_vert_2
+
+
+0
+2
+2
+KTHFS
+Wurth-MPC4_male_vert_3
+
+
+0
+3
+3
 KTHFS
 Wurth-TBL_vert_4
 
@@ -55342,19 +55454,75 @@ Wurth-TBL_vert_4
 4
 4
 KTHFS
-Wurth-WTB_vert_2
+Wurth-WBT_2.0_male_angle_5x2
+
+
+0
+10
+10
+KTHFS
+Wurth-WBT_2.0_male_angle_6x2
+
+
+0
+12
+12
+KTHFS
+Wurth-WBT_2.0_male_angle_7x2
+
+
+0
+14
+14
+KTHFS
+Wurth-WBT_2.54_male_angle_2
+WR-WTB 2.54mm Right Angled Locking Header Top Locking, 2 Pins
+
+0
+2
+2
+KTHFS
+Wurth-WBT_2.54_male_angle_6
+WR-WTB Wire-to-Board Connectors 2.54 mm Male Right Angled Bottom Locking Header, 6 pins;
+
+0
+6
+6
+KTHFS
+Wurth-WTB-2.0_male_vert_6x2
+
+
+0
+12
+12
+KTHFS
+Wurth-WTB-2.0_male_vert_7x2
+
+
+0
+14
+14
+KTHFS
+Wurth-WTB_2.54_male_vert_2
 
 
 0
 2
 2
 KTHFS
-Wurth-WTB_vert_4
+Wurth-WTB_2.54_male_vert_4
 
 
 0
 4
 4
+KTHFS
+Wurth-WTB_2.54_male_vert_6
+
+
+0
+6
+6
 KTHFS
 breadboard
 
@@ -55362,13 +55530,6 @@ breadboard
 0
 0
 0
-KTHFS
-cell_measure_pcb
-
-
-0
-42
-22
 KTHFS
 ev15_cell_tabs
 
